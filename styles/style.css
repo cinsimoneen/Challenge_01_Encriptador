@@ -35,7 +35,7 @@
   outline: none;
 }
 
-.terminos {
+.etiqueta {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -47,7 +47,7 @@
   top: 80%;
 }
 
-.terminos p {
+.etiqueta p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -75,8 +75,9 @@
   align-items: center;
   justify-content: center;
   padding: 2%;
-  gap: 8px;
+  gap: 10px;
   width: 25%;
+  margin:5px;
   background-color: #0a3871;
   border-radius: 24px;
   font-family: "Inter";
@@ -93,8 +94,9 @@
   align-items: flex-start;
   justify-content: center;
   padding: 2%;
-  gap: 8px;
+  gap: 10px;
   width: 25%;
+  margin:5px;
   background: #d8dfe8;
   border: 1px solid #0a3871;
   border-radius: 24px;
@@ -141,7 +143,7 @@
 
 .mensaje-encriptado h2 {
   width: 60%;
-  font-family: "Inter";
+  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -152,7 +154,7 @@
 
 .mensaje-encriptado p {
   width: 80%;
-  font-family: "Inter";
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -183,12 +185,12 @@
     left: 10%;
     top: 5%;
   }
-  .terminos {
+  .etiqueta {
     width: 80%;
     left: 10%;
     top: 67%;
   }
-  .terminos p {
+  .etiqueta p {
     font-size: 16px;
   }
   .botones {

@@ -1,6 +1,6 @@
 function encriptar() {
     let texto = document.getElementById("texto").value;
-    let tituloMensaje = document.getElementById("titulo-mensaje");
+    let tituloMensaje = document.getElementById("mensaje-salida");
     let parrafo = document.getElementById("parrafo");
     let imgencriptar = document.getElementById("imgencriptar");
   
@@ -11,16 +11,18 @@ function encriptar() {
       .replace(/o/gi, "ober")
       .replace(/u/gi, "ufat");
   
-    if (texto.length != 0) {
+    if (texto.length != 0) 
+    {
       document.getElementById("texto").value = textoCifrado;
       tituloMensaje.textContent = "Texto encriptado con éxito";
       parrafo.textContent = "";
       imgencriptar.src = "./assets/desencriptar.png";
-    } else {
+    } else 
+    {
         imgencriptar.src = "./assets/encriptar.png";
-      tituloMensaje.textContent = "Ningún mensaje fue encontrado";
+      tituloMensaje.textContent = "No se encontró el mensaje";
       parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-      swal("Sin texto", "Debes ingresar un texto", "warning");
+      swal("Sin texto", "Se debe ingresar un texto", "warning");
     }
   }
   
